@@ -3,7 +3,7 @@ import { HfInference } from '@huggingface/inference'
 const inputJokeBtn = document.getElementById("processJoke")
 let joke = document.getElementById("joke")
 let randomJoke = document.getElementById("randomJoke")
-const hf = new HfInference("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")
+const hf = new HfInference("")
 
 
 // Hugging Face Inference API docs: https://huggingface.co/docs/huggingface.js/inference/README
