@@ -1,0 +1,17 @@
+{
+  "name": "joke-reader-app-with-jokeapi-and-huggingface",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.2.0"
+  },
+  "dependencies": {
+    "@huggingface/inference": "^2.6.7"
+  }
+}
