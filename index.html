@@ -1,20 +1,28 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <title></title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>Tell me a joke</h1>
-        <img class="top-image-logo" src="./images/thumbsup.png">
-
-        <label for="joke"></label>
-        <input name="joke" id="joke">
-        <button id="processJoke">Submit</button>
-        <img src="./images/crocs.jpg">
-        <h3 id="randomJoke">random weather joke</h3>
-        <audio id="speech" controls />
-        
-        <script type="module" src="index.js"></script>
-    </body>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <title></title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <h1>Tell me a joke</h1>
+      <img class="top-image-logo" src="./images/thumbsup.png" />
+        <p>Write the category of joke you want</p>
+      <label for="joke"></label>
+      <input name="joke" id="joke" />
+      <button id="processJoke">Submit</button>
+      <img src="./images/crocs.jpg" />
+      <p>Or</p>
+      <button id="randomJoke">Get random joke</button>
+      <h3 id="setup"></h3>
+      <h3 id="punchline"></h3>
+      <audio id="speech" controls />
+    </div>
+    <script type="module" src="index.js"></script>
+  </body>
 </html>
