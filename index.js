@@ -103,7 +103,7 @@ console.log(xhr.open("GET","https://v2.jokeapi.dev/joke/Christmas"))
   xhr.send();
 });
 
-const hf = new HfInference("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");
+const hf = new HfInference(apiKey);
 
 // Hugging Face Inference API docs: https://huggingface.co/docs/huggingface.js/inference/README
 let text = "";
