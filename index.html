@@ -12,16 +12,36 @@
     <div class="main">
       <h1>Tell me a joke</h1>
       <img class="top-image-logo" src="./images/thumbsup.png" />
-        <p>Write the category of joke you want</p>
-      <label for="joke"></label>
-      <input name="joke" id="joke" />
-      <button id="processJoke">Submit</button>
-      <img src="./images/crocs.jpg" />
+      <p>Select the category of joke you want</p>
+      <div class="options">
+        
+        <input class="jokeTypes" type="checkbox" id="Programming" />
+        <label for="Programming">Programming</label>
+        
+        <input class="jokeTypes" type="checkbox" id="Christmas" />
+        <label for="Christmas">Christmas</label>
+        
+        <input class="jokeTypes" type="checkbox" id="Spooky" />
+        <label for="Spooky">Spooky</label>
+        
+        <input class="jokeTypes" type="checkbox" id="Pun" />
+        <label for="Pun">Pun</label>
+        
+        <input class="jokeTypes" type="checkbox" id="Misc" />
+        <label for="Misc">Misc</label>
+      </div>
+
+      
+      <button class="btn" id="processJoke">Submit</button>
+      <img id="mainImage" src="./images/croc2.jpg" />
       <p>Or</p>
-      <button id="randomJoke">Get random joke</button>
+      <button class="btn" id="randomJoke">Get random joke</button>
       <h3 id="setup"></h3>
       <h3 id="punchline"></h3>
-      <audio id="speech" controls />
+      <div><audio id="speech" controls /></div>
+      
+      <div><audio id="punchlineAudio" controls /></div>
+      
     </div>
     <script type="module" src="index.js"></script>
   </body>
