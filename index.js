@@ -27,6 +27,8 @@ inputJokeBtn.addEventListener("click", () => {
   var params = ["blacklistFlags=nsfw,religious,racist", "idRange=0-100"];
 
   
+
+  
   var xhr = new XMLHttpRequest();
   xhr.open(
     "GET",
@@ -36,7 +38,7 @@ inputJokeBtn.addEventListener("click", () => {
       "?" +
       params.join("&")
   );
-console.log(xhr.open("GET","https://v2.jokeapi.dev/joke/Christmas"))
+console.log(xhr.open("GET",`https://v2.jokeapi.dev/joke/${randomJokeCategoriesArray.join(",")}`))
 
   xhr.onreadystatechange = async function () {
     if (xhr.readyState == 4 && xhr.status < 300) {
@@ -103,27 +105,7 @@ console.log(xhr.open("GET","https://v2.jokeapi.dev/joke/Christmas"))
   xhr.send();
 });
 
-const hf = new HfInference("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");
-
-// Hugging Face Inference API docs: https://huggingface.co/docs/huggingface.js/inference/README
-let text = "";
-
-// inputJokeBtn.addEventListener('click', async ()=> {
-//   text = joke.value
-//   console.log(text)
-//   const response = await hf.textToSpeech({
-//     inputs: text,
-//     model: "espnet/kan-bayashi_ljspeech_vits"
-//   })
-
-//   const audioElement = document.getElementById('speech')
-// const speechUrl = URL.createObjectURL(response)
-// audioElement.src = speechUrl
-
-//   console.log(response)
-// })
-
-///////////
+const hf = new HfInference(API_Key);
 
 randomJokeBtn.addEventListener("click", async () => {
   
